@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reserva de hoteles</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <h1>Reserva de hoteles</h1>
+    <div class="tab">
+        <button class="tablinks" id="hotels"><i class="fas fa-bed"></i> Hotels</button>
+        <button class="tablinks" id="flight"><i class="fas fa-bed"></i>&nbsp;<i class="fas fa-fighter-jet"></i> Flight &
+            Hotel</button>
+    </div>
+    <div id="cuadro">
+        <div id="London" class="tabcontent">
+            <div class="cuadro">
+                <p>Destination or Hotel Name</p>
+                <input type="text" class="date" id="hotel" placeholder="Destination, resort or Hotel?">
+            </div>
+            <div class="cuadro">
+                <p>Check-in Date</p>
+                <input type="date" class="date" id="date" id="fechaActual">
+            </div>
+            <div class="cuadro">
+                <p>Nights</p>
+                <select id="durations"></select>
+            </div>
+            <div id="hola" class="hola">
+                <div>
+                    <div onclick="mostrar()">
+                        <p> Room & Guests</p>
+                    </div>
+                    <input type="text" id="dato" class="dato" name="resultado" value="Refill" disabled><br>
+                    <li id='oculto' class='oculto'>
+                        <ul id="menudoble">
+                            <ul>
+                                <li>Adultos:
+                                    <input id="adulto" class="dato" type="text/javascript" disabled />
+                                <li><input type="button" id="boton" name="boton" class="boton1" value="+"
+                                        onclick="sumarAdultos()">
+                                    <input type="button" id="boton1" name="boton1" class="boton1" value="-"
+                                        onclick="restarAdultos()">
+                                </li>
+                    </li>
+                    <li>Niños:
+                        <input id="nino" class="dato" type="text/javascript" disabled />
+                    <li>
+                        <input type="button" id="boton" name="boton" class="boton1" value="+" onclick="sumarNinos()">
+                        <input type="button" id="boton" name="boton" class="boton1" value="-" onclick="restarNinos()">
+                        <div id="zonaninos">
+
+                        </div>
+                        </select>
+                    </li>
+                    </li>
+                    </ul>
+                    <ul class="room">
+                        <br>
+                        <li class="mas"><i class="fa fa-plus-circle fa-lg"></i><br><br><button
+                                onclick="myFunction()">Try
+                                it</button></li><br>
+                        <li onclick="longitud();">Done</li>
+                    </ul>
+                    </ul>
+                    </li>
+                    <div id="clones"></div>
+                </div>
+            </div>
+        </div>
+        <button class="check" onclick="escribir()">Check</button>
+    </div>
+    <br><br>
+    <div id="cont1"></div>
+    <script type="text/javascript" src="js/funciones.js"></script>
+    <!--<script type="text/javascript" src="js/build/todo.js"></script>-->
+
+</body>
+
+</html>
