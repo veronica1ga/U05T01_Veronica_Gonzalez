@@ -1,0 +1,139 @@
+body {
+    font-family: Arial;
+    background-color: #00CED1;
+    text-decoration: none;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1.7em;
+}
+
+/* Create an active/current tablink class */
+.tab button.active,
+#hotels {
+    background-color: yellow;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+#flight,
+#hotels {
+    font-weight: bold;
+}
+
+#flight {
+    background-color: #4756ef;
+    margin-left: 1em;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    color: white;
+}
+
+#London {
+    border: 5px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    width: 70em;
+    background-color: yellow;
+}
+
+#flight>i {
+    color: white;
+}
+
+.cuadro,.hola {
+    background-color: white;
+    width: 80em;
+    height: 5em;
+    margin-left: 0.3em;
+    padding: 0.5em;
+}
+
+.cuadro:first-child {
+    width: 90em;
+}
+
+#hotel {
+    font-size: 0.8em;
+    width: 20em;
+}
+
+.check {
+    background-color: darkorange;
+    margin-left: 1em;
+    width: 6em;
+    padding: 1.5em;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1.5em;
+}
+
+#cuadro {
+    display: flex;
+}
+
+.date {
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+select {
+    border: none;
+    font-size: 1.2em;
+}
+
+/*-------------------último dato (rooms & guests)------------------*/
+ul {
+    list-style: none;
+    display: inline-block;
+
+}
+
+#oculto {
+    background-color: white;
+    display: none;
+    margin: none;
+    margin-bottom: 0.5em;
+    padding-top: auto;
+    height: auto;
+    width: 28em;
+    border:solid red;
+    
+}
+
+ul#menudoble li {
+    padding: 0.1em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    top: -1.6em;
+}
+
+.dato{
+    border:none;
+    background-color: white;
+    font-size: 0.9em;
+    color:black;
+}
+
+#hola>div>div>p:hover{
+    border: solid red;
+    width:9em;
+}
